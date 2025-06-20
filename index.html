@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.AppleSystemUIFontMonospaced'; color: #870581}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {color: #97007e}
+    span.s2 {font-kerning: none}
+    span.s3 {font: 12.0px 'Apple Color Emoji'; font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE <span class="s1">html</span>&gt;</p>
+<p class="p2"><span class="s2">&lt;html lang="es"&gt;</span></p>
+<p class="p2"><span class="s2">&lt;head&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">  </span>&lt;title&gt;Reserva de Portátiles&lt;/title&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">  </span>&lt;style&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>body { font-family: sans-serif; background: #eef; padding: 1em; }</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>table { width: 100%; border-collapse: collapse; margin-bottom: 1em; }</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>.disponible { background: #d9ffd9; cursor: pointer; }</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>.reservado { background: #ffc5c5; }</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>.recreo { background: #ffa; font-weight: bold; }</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>.admin { background: #f3f3f3; padding: 1em; border-radius: 6px; margin-top: 2em; }</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>.oculto { display: none; }</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>.mensaje {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>position: fixed;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>top: 10px;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>right: 10px;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>background: #28a745;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>color: white;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>padding: 10px 15px;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>border-radius: 8px;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>box-shadow: 0 2px 6px rgba(0,0,0,0.3);</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>z-index: 1000;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>animation: fadeOut 2s 2s forwards;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>@keyframes fadeOut {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>to { opacity: 0; transform: translateY(-20px); }</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">  </span>&lt;/style&gt;</span></p>
+<p class="p2"><span class="s2">&lt;/head&gt;</span></p>
+<p class="p2"><span class="s2">&lt;body&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">  </span>&lt;h1&gt;Reserva de Portátiles&lt;/h1&gt;</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">  </span>&lt;table&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;thead&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>&lt;tr&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>&lt;th&gt;Horario&lt;/th&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>&lt;th&gt;Lunes&lt;/th&gt;&lt;th&gt;Martes&lt;/th&gt;&lt;th&gt;Miércoles&lt;/th&gt;&lt;th&gt;Jueves&lt;/th&gt;&lt;th&gt;Viernes&lt;/th&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>&lt;/tr&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;/thead&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;tbody id="tabla"&gt;&lt;/tbody&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">  </span>&lt;/table&gt;</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">  </span>&lt;h3&gt;Hacer una reserva&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">  </span>&lt;select id="dia"&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;option&gt;Lunes&lt;/option&gt;&lt;option&gt;Martes&lt;/option&gt;&lt;option&gt;Miércoles&lt;/option&gt;&lt;option&gt;Jueves&lt;/option&gt;&lt;option&gt;Viernes&lt;/option&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">  </span>&lt;/select&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">  </span>&lt;select id="hora"&gt;&lt;/select&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">  </span>&lt;select id="armario"&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;option&gt;Armario 1&lt;/option&gt;&lt;option&gt;Armario 2&lt;/option&gt;&lt;option&gt;Armario 3&lt;/option&gt;&lt;option&gt;Armario 4&lt;/option&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">  </span>&lt;/select&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">  </span>&lt;input type="text" id="usuario" placeholder="Tu nombre"&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">  </span>&lt;button onclick="nuevaReserva()"&gt;</span><span class="s3">📌</span><span class="s2"> Reservar&lt;/button&gt;</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">  </span>&lt;div class="admin"&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;h3&gt;</span><span class="s3">🔒</span><span class="s2"> Área de administrador&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;input type="password" id="passAdmin" placeholder="Contraseña admin"&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;button onclick="verAdmin()"&gt;Entrar&lt;/button&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;div id="panelAdmin" class="oculto"&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>&lt;button onclick="guardarEnSheets()"&gt;</span><span class="s3">📤</span><span class="s2"> Guardar en Google Sheets&lt;/button&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>&lt;button onclick="borrarReservas()"&gt;</span><span class="s3">🗑</span><span class="s2"> Borrar todas las reservas&lt;/button&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>&lt;p id="estado"&gt;&lt;/p&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">  </span>&lt;div id="mensaje" class="mensaje oculto"&gt;Reserva guardada </span><span class="s3">✅</span><span class="s2">&lt;/div&gt;</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">  </span>&lt;script&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxYKQpF_WZkPWWCguInYWDfjIPyQk_yeXIVg7CY6S8vSsy8atgq-GUgmRlfsLc9ccvl5A/exec";</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>const horarios = [</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>"1ª hora (8:15 - 9:10)", "2ª hora (9:10 - 10:05)", "3ª hora (10:05 - 11:00)",</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>"RECREO", "4ª hora (11:30 - 12:25)", "5ª hora (12:25 - 13:20)", "6ª hora (13:20 - 14:15)"</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>];</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>const dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"];</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>let reservas = {};</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>const tabla = document.getElementById("tabla");</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>const selectHora = document.getElementById("hora");</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>fetch(SCRIPT_URL)</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>.then(res =&gt; res.json())</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>.then(data =&gt; {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>reservas = data;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>construirTabla();</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>})</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>.catch(() =&gt; {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>alert("</span><span class="s3">⚠️</span><span class="s2"> No se pudo cargar la hoja. Se mostrará vacío.");</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>reservas = {};</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>construirTabla();</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>});</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>function construirTabla() {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>tabla.innerHTML = "";</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>selectHora.innerHTML = "";</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>horarios.forEach((h, i) =&gt; {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>const tr = document.createElement("tr");</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>const th = document.createElement("td");</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>th.textContent = h;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>tr.appendChild(th);</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>dias.forEach(dia =&gt; {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">          </span>const key = `${dia}-${i}`;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">          </span>const td = document.createElement("td");</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">          </span>if (h === "RECREO") {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">            </span>td.className = "recreo";</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">            </span>td.textContent = "RECREO";</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">          </span>} else {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">            </span>td.className = reservas[key] ? "reservado" : "disponible";</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">            </span>td.textContent = reservas[key] || "Disponible";</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">            </span>td.onclick = () =&gt; {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">              </span>document.getElementById("dia").value = dia;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">              </span>selectHora.value = i;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">          </span>}</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">          </span>tr.appendChild(td);</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>tabla.appendChild(tr);</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>if (h !== "RECREO") {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">          </span>const opt = document.createElement("option");</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">          </span>opt.value = i;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">          </span>opt.textContent = h;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">          </span>selectHora.appendChild(opt);</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>});</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>function nuevaReserva() {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>const dia = document.getElementById("dia").value;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>const hora = parseInt(document.getElementById("hora").value);</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>const usuario = document.getElementById("usuario").value.trim();</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>const armario = document.getElementById("armario").value;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>if (!usuario) return alert("Introduce tu nombre.");</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>const key = `${dia}-${hora}`;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>reservas[key] = `${armario} - ${usuario}`;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>document.getElementById("usuario").value = "";</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>const fila = tabla.rows[hora];</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>const celda = fila.cells[dias.indexOf(dia) + 1];</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>celda.textContent = reservas[key];</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>celda.className = "reservado";</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>celda.onclick = null;</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>mostrarMensaje("Reserva guardada </span><span class="s3">✅</span><span class="s2">");</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>function verAdmin() {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>if (document.getElementById("passAdmin").value === "admin123") {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>document.getElementById("panelAdmin").classList.remove("oculto");</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>} else {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>alert("Contraseña incorrecta");</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>function guardarEnSheets() {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>const datos = new URLSearchParams();</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>datos.append("reservas", JSON.stringify(reservas));</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>fetch(SCRIPT_URL, {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>method: "POST",</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>body: datos,</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>headers: {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">          </span>"Content-Type": "application/x-www-form-urlencoded"</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>})</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>.then(() =&gt; {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>document.getElementById("estado").textContent = "</span><span class="s3">✅</span><span class="s2"> Guardado en Google Sheets.";</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>})</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>.catch(() =&gt; {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>document.getElementById("estado").textContent = "</span><span class="s3">❌</span><span class="s2"> Error al guardar.";</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>});</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>function borrarReservas() {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>if (!confirm("¿Seguro que deseas borrar todas las reservas?")) return;</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>reservas = {};</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>construirTabla();</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>fetch(SCRIPT_URL, {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>method: "POST",</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>body: "borrar=todo",</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>headers: {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">          </span>"Content-Type": "application/x-www-form-urlencoded"</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>})</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>.then(() =&gt; {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>document.getElementById("estado").textContent = "</span><span class="s3">🗑</span><span class="s2"> Reservas eliminadas.";</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>})</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>.catch(() =&gt; {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>document.getElementById("estado").textContent = "</span><span class="s3">❌</span><span class="s2"> No se pudo borrar la hoja.";</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>});</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>function mostrarMensaje(texto) {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>const msg = document.getElementById("mensaje");</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>msg.textContent = texto;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>msg.classList.remove("oculto");</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">      </span>setTimeout(() =&gt; msg.classList.add("oculto"), 4000);</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">  </span>&lt;/script&gt;</span></p>
+<p class="p2"><span class="s2">&lt;/body&gt;</span></p>
+<p class="p2"><span class="s2">&lt;/html&gt;</span></p>
+</body>
+</html>
